@@ -4,7 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
+import android.view.*;
+import android.widget.*;
 
 public class HaikuDisplay extends Activity {
 
@@ -35,4 +36,11 @@ public class HaikuDisplay extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+   public void onLoveButtonClicked(View view)
+   {
+        TextView textView =  (TextView) findViewById(R.id.textView);
+        textView.setVisibility(View.VISIBLE);
+    }
+
 }
