@@ -14,10 +14,16 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         String[] aColors = getResources().getStringArray(R.array.colorsArray);
+
         int length = aColors.length;
-        for(int i = length-1; i>=0; i--)
+        for(int i = 0; i<length; i++)
         {
-            Log.v(aColors[i],"Print");
+            int length1 = aColors[i].length();
+            char c[] = aColors[i].toCharArray();
+            for(int j=0;j<length1;j++) {
+                String c1 = c[j]+"";
+                Log.v(c1, "Print");
+            }
         }
     }
 
