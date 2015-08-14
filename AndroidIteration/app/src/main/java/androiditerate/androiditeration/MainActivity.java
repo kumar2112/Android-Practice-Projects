@@ -14,9 +14,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         String[] aColors = getResources().getStringArray(R.array.colorsArray);
-        for(String color: aColors)
+        int length = aColors.length;
+        for(int i =0; i<length; i++)
         {
-            Log.v(color,"Print");
+            Log.v(aColors[i],"Print");
         }
     }
 
